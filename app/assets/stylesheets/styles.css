@@ -1,0 +1,106 @@
+﻿html, body {
+	margin:0px; 
+	padding:0px; 
+	background:#eee; 
+	font-family:verdana; 
+	font-size:12px;
+}
+a {
+	font-size: 12px;
+}
+/* The header and footer */
+.headfoot {
+	position: relative;
+	display:block; 
+	height:150px; 
+	background:#669900; 
+	color:#fff; 
+	text-align:center; 
+	padding:5px;
+	font-size:30px;	
+	min-width:600px;
+}
+
+.toppanel {
+	position: relative;
+	height: 50px;
+	top: 0px;
+	font-size:20px;
+	text-align:center;
+}
+
+.bottompanel {
+	position:relative;
+	height:50px;
+	bottom: 0px;
+	font-size:20px;	
+	text-align:center;
+}
+
+.comment {
+	display:block;
+	position:relative;
+	font-style:italic;
+	font-size:12px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.reference {
+	display:block;
+	position:relative;
+	font-size: 12px;
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+/* This bit does all the work */
+#container {
+	position:relative; 
+	display:block; 
+	background:#FFFF66; 
+	border-left:200px solid #99CC00; 
+	border-right:200px solid #99CC00;
+	min-height:600px;
+	min-width: 600px;
+}
+#inner {
+	display:block; 
+	margin-left:-200px; 
+	margin-right:-200px; 
+	padding:5px;
+}
+#left {
+	float:left; 
+	position:relative; 
+	width:200px; 
+	left:0px;
+}
+#right {
+	float:right;
+	position:relative; 
+	width:190px; 
+	right:0px;
+}
+#center {
+	margin-left:200px; 
+	margin-right:200px; 
+	position:relative; 
+	display:block; 
+	height:1%;
+	min-width:400px;
+	font-size:14px;
+}
+
+#credit {
+	float: right;
+	position: relative;
+	font-size:10px;
+}
+
+#contact {
+	float: left;
+	position:relative;
+	font-size: 12px;
+	text-align:left;
+}
