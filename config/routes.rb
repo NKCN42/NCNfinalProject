@@ -1,11 +1,8 @@
 NCNfinalProject::Application.routes.draw do
-  get "pages/home"
-
-  get "pages/archive"
-
-  get "pages/news"
-
-  get "pages/contact"
+  match '/home', :to => 'pages#home'
+  match '/archive', :to => 'pages#archive'
+  match '/news', :to => 'pages#news'
+  match '/contact', :to => 'pages#contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

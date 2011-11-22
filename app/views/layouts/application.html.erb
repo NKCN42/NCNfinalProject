@@ -2,13 +2,26 @@
 <html>
 <head>
   <title>NCNfinalProject</title>
-  <%= stylesheet_link_tag    "application" %>
+  <%= stylesheet_link_tag    'styles', :media => 'screen' %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<%= render 'layouts/header'%>
+<div id="container">
+	<div id="inner">
+		<%= render 'layouts/leftpanel'%>
+		<div id="right"></div>
+		<div id="center">
+		<div class="toppanel">Insert Blog Title Here<br/><a href="">Previous</a> <a href="">Next</a></div>
 
-<%= yield %>
-
+		<%= yield %>
+		
+		<div class="bottompanel"><a href="">Previous</a> <a href="">Next</a></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<%= render 'layouts/footer'%>
 </body>
 </html>
