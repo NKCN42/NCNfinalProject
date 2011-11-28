@@ -3,6 +3,7 @@ NCNfinalProject::Application.routes.draw do
   match '/archive', :to => 'pages#archive'
   match '/news', :to => 'pages#news'
   match '/contact', :to => 'pages#contact'
+  match '/videos', :to => 'pages#videos'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>NCNfinalProject</title>
+  <title><%= @title %></title>
   <%= stylesheet_link_tag    'styles', :media => 'screen' %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -13,11 +13,7 @@
 		<%= render 'layouts/leftpanel'%>
 		<div id="right"></div>
 		<div id="center">
-		<div class="toppanel">Insert Blog Title Here<br/><a href="">Previous</a> <a href="">Next</a></div>
-
 		<%= yield %>
-		
-		<div class="bottompanel"><a href="">Previous</a> <a href="">Next</a></div>
 		</div>
 		<div class="clear"></div>
 	</div>
