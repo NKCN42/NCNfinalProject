@@ -1,5 +1,5 @@
 NCNfinalProject::Application.routes.draw do
-  match '/home', :to => 'pages#home'
+  root :to => 'pages#home'
   match '/archive', :to => 'pages#archive'
   match '/news', :to => 'pages#news'
   match '/contact', :to => 'pages#contact'
