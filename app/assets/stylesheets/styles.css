@@ -104,3 +104,9 @@ a {
 	font-size: 12px;
 	text-align:left;
 }
+
+#imagebuffer {
+	position:inherit; 
+	margin-left:200px;
+	display:inline-block;
+}

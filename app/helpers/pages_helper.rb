@@ -17,4 +17,10 @@ module PagesHelper
   def contact_img
     image_tag("contactus.jpg")
   end
+  def youtube_img
+    image_tag("YouTube-Logo.png")
+  end
+  def facebook_img
+    image_tag("fblogo.jpg")
+  end
 end
