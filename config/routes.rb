@@ -1,4 +1,6 @@
 NCNfinalProject::Application.routes.draw do
+  get "sessions/new"
+
   root :to => 'pages#home'
   match '/archive', :to => 'pages#archive'
   match '/news', :to => 'pages#news'
