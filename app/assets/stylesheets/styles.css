@@ -110,3 +110,10 @@ a {
 	margin-left:200px;
 	display:inline-block;
 }
+
+nav {
+float: right;
+background: white;
+padding: 0 0.7em;
+white-space: nowrap;
+}
