@@ -3,6 +3,7 @@
 <head>
   <title><%=@title%></title>
   <%= stylesheet_link_tag    'styles', :media => 'screen' %>
+  <%= stylesheet_link_tag    'custom', :media => 'screen' %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
@@ -13,7 +14,7 @@
 		<%= render 'layouts/leftpanel'%>
 		<div id="right"></div>
 		<div id="center">
-		<%= yield %>
+		<%= yield %> 
 		</div>
 		<div class="clear"></div>
 	</div>

@@ -117,3 +117,7 @@ background: white;
 padding: 0 0.7em;
 white-space: nowrap;
 }
+
+div.field, div.actions {
+	margin-bottom: 10px;
+}
