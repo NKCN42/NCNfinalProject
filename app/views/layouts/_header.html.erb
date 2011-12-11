@@ -1,7 +1,7 @@
 <div class="headfoot">Nutrition Simplified<br/>(tentative title)<br/>
 	<nav class = "round">
 	<ul>
-		<% if !current_user.nil? %> 
+		<% if signed_in? %> 
 		<li><%= link_to "Controls", "#"%></li>
 		<li><%= link_to "Sign out", signout_path %></li>
 	<% else %>
