@@ -1,11 +1,14 @@
 NCNfinalProject::Application.routes.draw do
-  get "sessions/new"
+  
+  resources :users
+  resources :sessions, :only => [:new, :create, :destroy]
 
   root :to => 'pages#home'
   match '/archive', :to => 'pages#archive'
   match '/news', :to => 'pages#news'
   match '/contact', :to => 'pages#contact'
   match '/videos', :to => 'pages#videos'
+  match '/signup', :to => 'users#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
