@@ -8,6 +8,7 @@ class MicropostsController < ApplicationController
       redirect_to current_user
     else 
       render root_path
+    end
   end
   
   def destroy
