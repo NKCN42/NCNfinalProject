@@ -1,4 +1,12 @@
 <h2>Archive</h2>
 <ul>
-	<li><%= link_to "Insert Blog Title Here", root_path%>, Published 11/22/11</li>
+	<% @admin = User.find_by_username("Admin")%>
+	<% @microposts = @admin.microposts%>
+	<% unless @admin.microposts.empty?%>
+	<table class = "microposts">
+		<%= render @microposts%>
+	</table>
+	
+	<% end %>	
+	
 </ul>

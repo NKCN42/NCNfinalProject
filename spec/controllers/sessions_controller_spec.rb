@@ -33,7 +33,7 @@ describe SessionsController do
         post :create, :session => @attr
         flash.now[:error].should =~ /invlaid/i
       end
-     end
+    end
     
     describe "with valid user name" do 
       before(:each) do 
@@ -53,12 +53,14 @@ describe SessionsController do
       end
     end
   end
-    describe "DELETE 'destroy'" do
-      it "should sign a user out" do
+  
+  describe "DELETE 'destroy'" do
+    it "should sign a user out" do
         test_sign_in(Factory(:user))
         delete :destroy
         controller.should_not be_signed_in
         response.should redirect_to(root_path)
-      end
     end
+  end
+  
 end
