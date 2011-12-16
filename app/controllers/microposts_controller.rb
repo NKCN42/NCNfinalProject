@@ -11,6 +11,11 @@ class MicropostsController < ApplicationController
     end
   end
   
+  def show
+    @micro = Micropost.find(params[:id])
+    @title = @micro.title
+  end
+  
   def destroy
     
   end

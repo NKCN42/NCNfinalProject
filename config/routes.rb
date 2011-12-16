@@ -8,7 +8,7 @@ NCNfinalProject::Application.routes.draw do
   match '/signout', :to => 'sessions#destroy'
   resources :users
   resources :sessions, :only => [:new, :create, :destroy]
-  resources :microposts, :only => [:create, :destroy]
+  resources :microposts
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
